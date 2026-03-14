@@ -1,16 +1,22 @@
-# React + Vite
+Luxury Hotel Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern hotel website built with React and TailwindCSS. It is designed to showcase rooms, amenities, services, and provide a smooth booking experience for visitors.
 
-Currently, two official plugins are available:
+Currently, the project includes:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Responsive Design – Works perfectly on desktop, tablet, and mobile.
 
-## React Compiler
+Interactive UI Components – Built with React for dynamic content.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+TailwindCSS Styling – Fast and customizable styling framework.
 
-## Expanding the ESLint configuration
+Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React
+ – Frontend library for building interactive UIs.
+
+TailwindCSS
+ – Utility-first CSS framework for styling.
+
+Vite
+ – Development server and build tool with fast refresh.
