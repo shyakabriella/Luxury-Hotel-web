@@ -9,6 +9,7 @@ import Meeting from "../pages/Meeting";
 import Accomodation from "../pages/Accomodation";
 import HeroSection from "../components/home/Home";
 import ContactPage from "../components/contact/Contact";
+import Gallery from "../pages/Gallery";
 
 const AppRoutes = () => {
   return (
@@ -23,6 +24,7 @@ const AppRoutes = () => {
           <Route path="/meetings" element={<Meeting />} />
           <Route path="/accommodations" element={<Accomodation />} />
           <Route path="/contact" element={<ContactPage/>} />
+          <Route path="/gallery" element={<Gallery/>} />
       </Routes>
     </>
   );
