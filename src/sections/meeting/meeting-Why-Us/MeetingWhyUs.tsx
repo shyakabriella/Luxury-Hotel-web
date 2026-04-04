@@ -38,13 +38,13 @@ export default function MeetingWhyUs() {
       <div className="relative z-10 w-[90%] h-[600px] bg-white/10 backdrop-blur-md rounded-md shadow-lg flex justify-between items-center p-8">
         
         <div className="w-1/2 pr-6 text-left">
-          <h2 className="text-4xl font-bold text-yellow-900 mb-4">
+          <h2 className="text-4xl font-bold text-[#1f3a37] mb-4">
             Why Choose Wonder Valley?
           </h2>
-          <h3 className="text-2xl font-semibold text-gray-400 mb-6">
+          <h3 className="text-2xl font-semibold text-[#1f3a37]/70 mb-6">
             {slides[currentIndex].title}
           </h3>
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-[#1f3a37]/60">
             {slides[currentIndex].text}
           </p>
         </div>
@@ -58,20 +58,22 @@ export default function MeetingWhyUs() {
         </div>
       </div>
 
+      {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-8 top-1/2 -translate-y-1/2 bg-white/70 text-black h-10 w-10 rounded-full hover:bg-white z-20"
+        className="absolute left-8 top-1/2 -translate-y-1/2 bg-[#1f3a37]/70 text-white h-10 w-10 rounded-full hover:bg-[#1f3a37] transition z-20"
       >
         ←
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-8 top-1/2 -translate-y-1/2 bg-white/70 text-black w-10 h-10 rounded-full hover:bg-white z-20"
+        className="absolute right-8 top-1/2 -translate-y-1/2 bg-[#1f3a37]/70 text-white w-10 h-10 rounded-full hover:bg-[#1f3a37] transition z-20"
       >
         →
       </button>
 
-      <div className="absolute bottom-1 right-12 text-gray-300 text-[150px] font-semibold z-20">
+      {/* Slide Counter */}
+      <div className="absolute bottom-1 right-12 text-[#1f3a37]/40 text-[150px] font-semibold z-20">
         0{currentIndex + 1}
       </div>
     </div>

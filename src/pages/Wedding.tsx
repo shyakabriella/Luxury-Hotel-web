@@ -1,7 +1,7 @@
+import JourneySection from "../components/home/journey";
 import OurAwards from "../sections/wedding/wedding-Awards/OurAwards";
 import WeddingBanner from "../sections/wedding/wedding-Banner/WeddingBanner";
 import Faqs from "../sections/wedding/wedding-FAQ/Faqs";
-import Footer from "../sections/wedding/wedding-Footer/Footer";
 import GetInspired from "../sections/wedding/wedding-Get-Inspired/GetInspired";
 import Navbar from "../sections/wedding/wedding-Navbar/Navbar";
 import OurFavorite from "../sections/wedding/wedding-Our-Favorite/OurFavorite";
@@ -27,7 +27,8 @@ export default function Wedding() {
         <GetInspired />
         <StartPlanning />
         
-      <Footer />
+      {/* ===== FOOTER ===== */}
+      <JourneySection />
     </div>
   )
 }

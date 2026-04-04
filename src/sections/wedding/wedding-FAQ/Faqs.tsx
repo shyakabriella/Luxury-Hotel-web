@@ -24,17 +24,17 @@ export default function Faqs() {
 
   return (
     <div className="w-full min-h-screen bg-white flex flex-col items-center mb-12">
-      <h2 className="text-4xl font-bold text-yellow-900 mb-12">FAQs</h2>
+      <h2 className="text-4xl font-bold text-[#1f3a37] mb-12">FAQs</h2>
 
       <div className="w-[90%] max-w-5xl space-y-7">
         {faqs.map((faq, index) => (
-          <div key={index} className="border-b border-gray-300 pb-4">
+          <div key={index} className="border-b border-[#1f3a37]/30 pb-4">
             <button
               onClick={() => toggleFaq(index)}
-              className="w-full flex justify-between items-center text-left text-lg font-semibold text-gray-600 focus:outline-none"
+              className="w-full flex justify-between items-center text-left text-lg font-semibold text-[#1f3a37] focus:outline-none"
             >
               <span>{faq.question}</span>
-              <span className="text-yellow-700 text-2xl font-bold hover:text-yellow-600 transition-colors duration-300">
+              <span className="text-[#1f3a37] text-2xl font-bold hover:text-[#16302d] transition-colors duration-300">
                 {openIndex === index ? "–" : "+"}
               </span>
             </button>
@@ -44,7 +44,7 @@ export default function Faqs() {
                 openIndex === index ? "max-h-40 mt-3" : "max-h-0"
               }`}
             >
-              <p className="text-gray-400 text-base">{faq.answer}</p>
+              <p className="text-[#1f3a37]/70 text-base">{faq.answer}</p>
             </div>
           </div>
         ))}

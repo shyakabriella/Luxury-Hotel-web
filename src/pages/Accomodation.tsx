@@ -1,10 +1,9 @@
+import JourneySection from "../components/home/journey";
 import AccomodationBanner from "../sections/accomodation/accomodation-Banner/AccomodationBanner";
 import AccomodationClassic from "../sections/accomodation/accomodation-Classic/AccomodationClassic";
 import AccomodationFacilities from "../sections/accomodation/accomodation-Facilities/AccomodationFacilities";
-import AccomodationJourney from "../sections/accomodation/accomodation-journey-with-us/AccomodationJourney";
 import Navbar from "../sections/accomodation/accomodation-Navbar/Navbar";
 import AccomodationRooms from "../sections/accomodation/accomodation-Rooms/AccomodationRooms";
-import Footer from "../sections/accomodation/footer/Footer";
 
 export default function Accomodation() {
   return (
@@ -15,9 +14,9 @@ export default function Accomodation() {
         <AccomodationClassic />
         <AccomodationFacilities />
         <AccomodationRooms />
-        <AccomodationJourney />
 
-      <Footer />
+      {/* ===== FOOTER ===== */}
+      <JourneySection />
     </div>
   )
 }

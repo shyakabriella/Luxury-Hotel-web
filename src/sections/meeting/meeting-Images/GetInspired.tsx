@@ -27,8 +27,8 @@ export default function GetInspired() {
   return (
     <div className="w-full bg-white flex flex-col items-center py-16">
       <div className="w-[90%] max-w-6xl flex justify-between items-center mb-12">
-        <h2 className="text-4xl font-bold text-yellow-900">Get Inspired</h2>
-        <button className="bg-yellow-700 px-5 py-2 rounded-md shadow hover:bg-yellow-800 transition">
+        <h2 className="text-4xl font-bold text-[#1f3a37]">Get Inspired</h2>
+        <button className="bg-[#1f3a37] px-5 py-2 rounded-md shadow hover:bg-[#16302d] transition">
           <span className="text-white text-sm font-semibold tracking-wide">VIEW GALLERY</span>
         </button>
       </div>
@@ -45,7 +45,7 @@ export default function GetInspired() {
               alt={`Inspired ${idx + 1}`}
               className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex justify-center items-center">
+            <div className="absolute inset-0 bg-[#1f3a37]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex justify-center items-center">
               <span className="text-white text-3xl">⤢</span>
             </div>
           </div>
@@ -53,10 +53,10 @@ export default function GetInspired() {
       </div>
 
       {fullscreenIndex !== null && (
-        <div className="fixed inset-0 bg-black/90 flex justify-center items-center z-50 transition-opacity duration-500">
+        <div className="fixed inset-0 bg-[#1f3a37]/95 flex justify-center items-center z-50 transition-opacity duration-500">
           <button
             onClick={closeFullscreen}
-            className="absolute top-6 right-6 text-white text-3xl font-bold hover:text-gray-300"
+            className="absolute top-6 right-6 text-white text-3xl font-bold hover:text-[#c2d1cf]"
           >
             ✕
           </button>
@@ -69,13 +69,13 @@ export default function GetInspired() {
 
           <button
             onClick={prevImage}
-            className="absolute left-8 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-gray-300"
+            className="absolute left-8 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-[#c2d1cf]"
           >
             ←
           </button>
           <button
             onClick={nextImage}
-            className="absolute right-8 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-gray-300"
+            className="absolute right-8 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-[#c2d1cf]"
           >
             →
           </button>

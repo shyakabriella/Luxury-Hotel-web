@@ -19,9 +19,9 @@ export default function AccommodationBanner() {
         style={{ backgroundImage: `url(${AccomodationBanner})` }}
       ></div>
 
-      {/* Dark overlay */}
+      {/* Brand overlay */}
       <div
-        className={`absolute inset-0 bg-black/50 transition-opacity duration-1000 ease-out ${
+        className={`absolute inset-0 bg-[#1f3a37]/70 transition-opacity duration-1000 ease-out ${
           animate ? "opacity-100" : "opacity-0"
         }`}
       ></div>

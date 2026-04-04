@@ -10,7 +10,7 @@ export default function AccomodationClassic() {
   return (
     <section className="px-6 py-16 max-w-4xl mx-auto text-center">
       <h2
-        className={`text-xl font-bold mb-4 text-yellow-600 transform transition-all duration-700 ease-out ${
+        className={`text-xl font-bold mb-4 text-[#1f3a37] transform transition-all duration-700 ease-out ${
           animate ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
         }`}
         style={{ transitionDelay: "100ms" }}
@@ -19,7 +19,7 @@ export default function AccomodationClassic() {
       </h2>
 
       <h3
-        className={`text-7xl font-semibold mb-12 text-gray-700 transform transition-all duration-700 ease-out ${
+        className={`text-7xl font-semibold mb-12 text-[#1f3a37] transform transition-all duration-700 ease-out ${
           animate ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
         }`}
         style={{ transitionDelay: "300ms" }}
@@ -28,7 +28,7 @@ export default function AccomodationClassic() {
       </h3>
 
       <p
-        className={`text-lg text-gray-600 transform transition-all duration-700 ease-out ${
+        className={`text-lg text-[#1f3a37] opacity-80 transform transition-all duration-700 ease-out ${
           animate ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
         }`}
         style={{ transitionDelay: "500ms" }}

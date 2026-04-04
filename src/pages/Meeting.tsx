@@ -1,4 +1,3 @@
-import Footer from "../sections/meeting/footer/Footer";
 import Navbar from "../sections/meeting/meeting-Navbar/Navbar";
 import MeetingBanner from "../sections/meeting/meeting-Banner/MeetingBanner";
 import StandoutSettings from "../sections/meeting/meeting-VenuesStandoutSettings/StandoutSettings";
@@ -9,6 +8,7 @@ import MeetingLocation from "../sections/meeting/meeting-Location/MeetingLocatio
 import OurFavorite from "../sections/meeting/meeting-Our-Favorite/OurFavorite";
 import GetInspired from "../sections/meeting/meeting-Images/GetInspired";
 import StartPlanning from "../sections/meeting/meeting-Start-Planning/StartPlanning";
+import JourneySection from "../components/home/journey";
 
 export default function Meeting() {
   return (
@@ -25,7 +25,8 @@ export default function Meeting() {
         <GetInspired />
         <StartPlanning />
       
-      <Footer />
+      {/* ===== FOOTER ===== */}
+      <JourneySection />
     </div>
   )
 }

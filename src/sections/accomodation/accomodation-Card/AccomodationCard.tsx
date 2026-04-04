@@ -1,12 +1,13 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
-export default function AccomodationCard({ 
-  header, 
-  title, 
-  capacity, 
-  description, 
-  images, 
-  reverse = false 
+export default function AccomodationCard({
+  header,
+  title,
+  capacity,
+  description,
+  images,
+  reverse = false,
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -21,8 +22,7 @@ export default function AccomodationCard({
     return () => clearInterval(interval);
   }, [images.length]);
 
-  const nextImage = () =>
-    setCurrentIndex((prev) => (prev + 1) % images.length);
+  const nextImage = () => setCurrentIndex((prev) => (prev + 1) % images.length);
   const prevImage = () =>
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
 
@@ -35,7 +35,7 @@ export default function AccomodationCard({
           observer.disconnect();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
     if (cardRef.current) observer.observe(cardRef.current);
     return () => observer.disconnect();
@@ -55,13 +55,18 @@ export default function AccomodationCard({
       >
         {/* Left side text */}
         <div className="md:w-1/2 p-6 flex flex-col justify-center">
-          <h2 className="text-xl font-bold text-yellow-600 mb-2">{header}</h2>
+          <h2 className="text-xl font-bold text-[#1f3a37] mb-2">{header}</h2>
           <h3 className="text-3xl font-semibold text-gray-800 mb-4">{title}</h3>
           <p className="text-gray-600 mb-2">Capacity: {capacity}</p>
           <p className="text-gray-600 mb-6">{description}</p>
-          <button className="bg-yellow-600 text-white px-6 py-2 rounded hover:bg-yellow-700 transition">
-            Book Now
-          </button>
+          <div className="w-full flex items-center gap-5">
+            <Link to={''} className="bg-[#1f3a37] text-white px-6 py-2 rounded hover:border hover:border-[#1f3a37] hover:text-[#1f3a37] hover:bg-white transition">
+              Book Now
+            </Link>
+            <Link to={''} className="border border-[#1f3a37] text-[#1f3a37] px-6 py-2 rounded hover:bg-[#162b29] hover:text-white transition">
+              View Room
+            </Link>
+          </div>
         </div>
 
         {/* Right side carousel */}

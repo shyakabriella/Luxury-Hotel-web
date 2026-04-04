@@ -46,14 +46,14 @@ export default function OurFavorite() {
 
       {/* Content */}
       <div className="relative z-10 w-[90%] max-w-4xl text-center px-6">
-        <h2 className="text-4xl font-bold text-yellow-900 mb-8">
+        <h2 className="text-4xl font-bold text-[#1f3a37] mb-8">
           Our Favorite Love Stories
         </h2>
 
-        <p className="text-xl text-gray-800 italic leading-relaxed mb-4">
+        <p className="text-xl text-[#1f3a37]/90 italic leading-relaxed mb-4">
           “{testimonials[currentIndex].quote}”
         </p>
-        <p className="text-lg text-gray-700 font-semibold">
+        <p className="text-lg text-[#1f3a37] font-semibold">
           {testimonials[currentIndex].author}
         </p>
 
@@ -61,16 +61,13 @@ export default function OurFavorite() {
         <div className="flex justify-between items-center mt-8">
           <button
             onClick={prev}
-            className="bg-white/70 text-black w-10 h-10 rounded-full hover:bg-yellow-800 hover:text-white transition"
+            className="bg-white/70 text-black w-10 h-10 rounded-full hover:bg-[#1f3a37] hover:text-white transition"
           >
             ←
           </button>
-          {/* <span className="text-gray-700 font-medium">
-            {currentIndex + 1} / {testimonials.length}
-          </span> */}
           <button
             onClick={next}
-            className="bg-white/70 text-black w-10 h-10 hover:bg-yellow-800 hover:text-white  rounded-full transition"
+            className="bg-white/70 text-black w-10 h-10 rounded-full hover:bg-[#1f3a37] hover:text-white transition"
           >
             →
           </button>

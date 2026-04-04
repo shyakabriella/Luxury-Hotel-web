@@ -24,11 +24,11 @@ export default function OurAwards() {
   return (
     <div className="relative w-full bg-white flex flex-col justify-center items-center py-16">
       <div className="flex items-center w-full justify-center mb-12">
-        <div className="flex-grow border-t border-yellow-700 mx-4"></div>
-        <h2 className="text-4xl font-bold text-yellow-900 whitespace-nowrap">
+        <div className="flex-grow border-t border-[#1f3a37] mx-4"></div>
+        <h2 className="text-4xl font-bold text-[#1f3a37] whitespace-nowrap">
           Our Awards
         </h2>
-        <div className="flex-grow border-t border-yellow-700 mx-4"></div>
+        <div className="flex-grow border-t border-[#1f3a37] mx-4"></div>
       </div>
 
       <div className="overflow-hidden w-[90%] max-w-5xl">
@@ -38,7 +38,7 @@ export default function OurAwards() {
         >
           {awards.map((award, idx) => (
             <div key={idx} className="flex-shrink-0 w-1/3 px-4">
-              <div className="h-40 flex items-center justify-center bg-yellow-700 rounded-md shadow-md p-6 text-lg text-white text-center">
+              <div className="h-40 flex items-center justify-center bg-[#1f3a37] rounded-md shadow-md p-6 text-lg text-white text-center">
                 {award}
               </div>
             </div>
@@ -49,18 +49,18 @@ export default function OurAwards() {
       <div className="flex justify-between items-center w-[90%] max-w-5xl mt-10">
         <button
           onClick={prev}
-          className="bg-yellow-700 text-white w-10 h-10 rounded-full hover:bg-yellow-800 transition"
+          className="bg-[#1f3a37] text-white w-10 h-10 rounded-full hover:bg-[#16302d] transition"
         >
           ←
         </button>
         <button
           onClick={next}
-          className="bg-yellow-700 text-white w-10 h-10 rounded-full hover:bg-yellow-800 transition"
+          className="bg-[#1f3a37] text-white w-10 h-10 rounded-full hover:bg-[#16302d] transition"
         >
           →
         </button>
       </div>
-      <div className="w-[98%] mt-10 border-t border-yellow-700"></div>
+      <div className="w-[98%] mt-10 border-t border-[#1f3a37]"></div>
     </div>
   );
 }

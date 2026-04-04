@@ -6,16 +6,16 @@ export default function StandoutSettingsTwo() {
     <div className="bg-white w-full min-h-screen flex flex-col gap-20 p-20">
       <div className="flex">
         <div className="w-[90%] md:w-1/2 flex flex-col justify-center px-6">
-          <h3 className="text-sm font-semibold text-yellow-900 tracking-wide mb-2">
+          <h3 className="text-sm font-semibold text-[#1f3a37] tracking-wide mb-2">
             VENUES
           </h3>
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl font-bold text-[#1f3a37] mb-6">
             Inspiring Vistas
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+          <p className="text-lg text-[#1f3a37]/80 leading-relaxed mb-8">
             Elevate your events with the magnificent backdrop of a secluded ranch. Our remarkable natural settings enhance productivity, inspire creativity, and foster long-lasting connections.
           </p>
-          <button className="px-12 py-4 bg-yellow-700 text-white font-semibold rounded-md shadow hover:bg-yellow-800 transition">
+          <button className="px-12 py-4 bg-[#1f3a37] text-white font-semibold rounded-md shadow hover:bg-[#16302d] transition">
             SEE VENUES
           </button>
         </div>
@@ -31,16 +31,16 @@ export default function StandoutSettingsTwo() {
 
       <div className="flex flex-row-reverse">
         <div className="w-[90%] md:w-1/2 flex flex-col justify-center px-6">
-          <h3 className="text-sm font-semibold text-yellow-900 tracking-wide mb-2">
+          <h3 className="text-sm font-semibold text-[#1f3a37] tracking-wide mb-2">
             CATERING
           </h3>
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl font-bold text-[#1f3a37] mb-6">
             Complete Catering
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+          <p className="text-lg text-[#1f3a37]/80 leading-relaxed mb-8">
             Enhance your guest experience by adding one of our chef-crafted menus to complement your stay. No matter what you’re looking for, we can put together the perfect catering package for your event.
           </p>
-          <button className="px-12 py-4 bg-yellow-700 text-white font-semibold rounded-md shadow hover:bg-yellow-800 transition">
+          <button className="px-12 py-4 bg-[#1f3a37] text-white font-semibold rounded-md shadow hover:bg-[#16302d] transition">
             LEARN MORE
           </button>
         </div>
