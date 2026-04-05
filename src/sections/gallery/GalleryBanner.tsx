@@ -1,4 +1,4 @@
-import BannerGallery from "../../assets/images/meetings/resort-banner.png";
+import BannerGallery from "../../assets/images/weddings/banner-gallery.png";
 
 const GalleryBanner = () => {
   return (

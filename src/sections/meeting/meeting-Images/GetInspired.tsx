@@ -19,20 +19,26 @@ export default function GetInspired() {
     setFullscreenIndex((prev) =>
       prev === 0 ? images.length - 1 : prev - 1
     );
+
   const nextImage = () =>
     setFullscreenIndex((prev) =>
       prev === images.length - 1 ? 0 : prev + 1
     );
 
   return (
-    <div className="w-full bg-white flex flex-col items-center py-16">
+    <div className="w-full bg-white flex flex-col items-center py-16 overflow-x-hidden">
+      
+      {/* Header */}
       <div className="w-[90%] max-w-6xl flex justify-between items-center mb-12">
         <h2 className="text-4xl font-bold text-[#1f3a37]">Get Inspired</h2>
         <button className="bg-[#1f3a37] px-5 py-2 rounded-md shadow hover:bg-[#16302d] transition">
-          <span className="text-white text-sm font-semibold tracking-wide">VIEW GALLERY</span>
+          <span className="text-white text-sm font-semibold tracking-wide">
+            VIEW GALLERY
+          </span>
         </button>
       </div>
 
+      {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-[90%] max-w-6xl">
         {images.map((src, idx) => (
           <div
@@ -52,8 +58,11 @@ export default function GetInspired() {
         ))}
       </div>
 
+      {/* Fullscreen */}
       {fullscreenIndex !== null && (
-        <div className="fixed inset-0 bg-[#1f3a37]/95 flex justify-center items-center z-50 transition-opacity duration-500">
+        <div className="fixed inset-0 bg-[#1f3a37]/95 flex justify-center items-center z-50 overflow-hidden">
+          
+          {/* Close */}
           <button
             onClick={closeFullscreen}
             className="absolute top-6 right-6 text-white text-3xl font-bold hover:text-[#c2d1cf]"
@@ -61,21 +70,24 @@ export default function GetInspired() {
             ✕
           </button>
 
+          {/* Image */}
           <img
             src={images[fullscreenIndex]}
             alt="Fullscreen"
-            className="max-h-[80%] max-w-[90%] object-contain rounded-md shadow-lg transition-transform duration-500"
+            className="max-h-[80%] max-w-[90%] object-contain rounded-md shadow-lg"
           />
 
+          {/* Arrows (FIXED safer positioning) */}
           <button
             onClick={prevImage}
-            className="absolute left-8 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-[#c2d1cf]"
+            className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-[#c2d1cf]"
           >
             ←
           </button>
+
           <button
             onClick={nextImage}
-            className="absolute right-8 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-[#c2d1cf]"
+            className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-[#c2d1cf]"
           >
             →
           </button>

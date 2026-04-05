@@ -12,21 +12,27 @@ export default function MeetingBanner() {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
 
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden overflow-x-hidden">
+      
+      {/* Background blur (FIXED) */}
       <div
-        className="absolute inset-0 bg-center bg-cover blur-xl scale-105"
+        className="absolute inset-0 bg-center bg-cover blur-xl"
         style={{ backgroundImage: `url(${images[currentIndex]})` }}
       ></div>
 
+      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
 
+      {/* Main image */}
       <img
         src={images[currentIndex]}
-        alt="Wedding"
+        alt="Meeting"
         className="absolute inset-0 m-auto max-h-full max-w-full object-contain z-0"
       />
 
+      {/* Content */}
       <div className="relative z-10 container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-20 items-center mt-20">
+        
         <div className="flex items-end justify-end h-full">
           <h1 className="text-white text-5xl md:text-6xl font-bold leading-snug max-w-md text-center md:text-left">
             Disconnect and <br />
@@ -39,83 +45,41 @@ export default function MeetingBanner() {
           <h2 className="text-2xl font-semibold mb-4 text-center text-[#1f3a37]">
             START PLANNING
           </h2>
+
           <form className="space-y-3">
-            <div>
-              <input
-                placeholder="First Name *"
-                type="text"
-                className="w-full border border-[#1f3a37]/40 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#1f3a37]"
-                required
-              />
-            </div>
-            <div>
-              <input
-                placeholder="Last Name *"
-                type="text"
-                className="w-full border border-[#1f3a37]/40 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#1f3a37]"
-                required
-              />
-            </div>
-            <div>
-              <input
-                placeholder="Email *"
-                type="email"
-                className="w-full border border-[#1f3a37]/40 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#1f3a37]"
-                required
-              />
-            </div>
-            <div>
-              <input
-                placeholder="Phone Number *"
-                type="tel"
-                className="w-full border border-[#1f3a37]/40 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#1f3a37]"
-                required
-              />
-            </div>
-            <div>
-              <input
-                placeholder="Company *"
-                type="text"
-                className="w-full border border-[#1f3a37]/40 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#1f3a37]"
-                required
-              />
-            </div>
+            <input placeholder="First Name *" type="text" className="w-full border border-[#1f3a37]/40 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#1f3a37]" required />
+            <input placeholder="Last Name *" type="text" className="w-full border border-[#1f3a37]/40 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#1f3a37]" required />
+            <input placeholder="Email *" type="email" className="w-full border border-[#1f3a37]/40 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#1f3a37]" required />
+            <input placeholder="Phone Number *" type="tel" className="w-full border border-[#1f3a37]/40 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#1f3a37]" required />
+            <input placeholder="Company *" type="text" className="w-full border border-[#1f3a37]/40 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#1f3a37]" required />
 
             <div className="space-y-4 text-[#1f3a37]">
               <div>
-                <p className="text-sm mb-1 font-semibold text-[#1f3a37]">
+                <p className="text-sm mb-1 font-semibold">
                   Are Your Dates Flexible?
                 </p>
                 <div className="flex gap-4">
                   <label className="flex items-center gap-2 cursor-pointer">
-                    <input
-                      type="radio"
-                      name="flexible"
-                      className="accent-[#1f3a37]"
-                    />
-                    <span className="text-[#1f3a37]">Yes</span>
+                    <input type="radio" name="flexible" className="accent-[#1f3a37]" />
+                    Yes
                   </label>
                   <label className="flex items-center gap-2 cursor-pointer">
-                    <input
-                      type="radio"
-                      name="flexible"
-                      className="accent-[#1f3a37]"
-                    />
-                    <span className="text-[#1f3a37]">No</span>
+                    <input type="radio" name="flexible" className="accent-[#1f3a37]" />
+                    No
                   </label>
                 </div>
               </div>
 
               <div className="flex items-start gap-2 text-sm">
                 <input type="checkbox" required className="accent-[#1f3a37]" />
-                <span className="text-[#1f3a37]">
+                <span>
                   I agree to the <span className="font-semibold">Privacy Policy</span>.
                 </span>
               </div>
 
               <div className="flex items-start gap-2 text-sm">
                 <input type="checkbox" className="accent-[#1f3a37]" />
-                <span className="text-[#1f3a37]">
+                <span>
                   Send me exclusive offers and updates.
                 </span>
               </div>
@@ -138,6 +102,7 @@ export default function MeetingBanner() {
       >
         ←
       </button>
+
       <button
         onClick={nextImage}
         className="absolute right-6 top-1/2 -translate-y-1/2 bg-[#1f3a37]/70 text-white w-20 h-20 rounded-full hover:bg-[#1f3a37] z-20 text-[20px]"

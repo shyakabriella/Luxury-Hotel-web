@@ -38,13 +38,13 @@ export default function MeetingWhyUs() {
       <div className="relative z-10 w-[90%] h-[600px] bg-white/10 backdrop-blur-md rounded-md shadow-lg flex justify-between items-center p-8">
         
         <div className="w-1/2 pr-6 text-left">
-          <h2 className="text-4xl font-bold text-[#1f3a37] mb-4">
+          <h2 className="text-4xl font-bold text-[#468f87] mb-4">
             Why Choose Wonder Valley?
           </h2>
-          <h3 className="text-2xl font-semibold text-[#1f3a37]/70 mb-6">
+          <h3 className="text-2xl font-semibold text-[#468f87] mb-6">
             {slides[currentIndex].title}
           </h3>
-          <p className="text-lg text-[#1f3a37]/60">
+          <p className="text-lg text-[#468f87]">
             {slides[currentIndex].text}
           </p>
         </div>
