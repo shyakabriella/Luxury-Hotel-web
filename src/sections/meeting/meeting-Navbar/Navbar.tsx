@@ -52,7 +52,7 @@ export default function Navbar() {
       {/* CTA BUTTON */}
       <Link
         to={"/contact"}
-        className="bg-[#1f3a37] px-4 py-2 rounded hover:bg-[#16302d] transition text-white"
+        className="bg-[#1f3a37] border border-white px-4 py-2 rounded hover:bg-[#16302d] transition text-white"
       >
         START PLANNING
       </Link>
